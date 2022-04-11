@@ -1,0 +1,116 @@
+:root {
+    --color-boton: rgb(7, 209, 172);
+    --color-boton-gradiente: linear-gradient(90deg, rgba(7, 209, 172, 1) 6%, rgba(21, 214, 198, 1) 93%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FEF1CC;
+    font-family: Calibri;
+}
+
+.img_fondo {
+    width: 100%;
+    position: fixed;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+
+.contenedor {
+    width: 34%;
+    height: 90vh;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 1px rgb(87, 87, 87);
+    overflow-y: auto;
+}
+
+#svg {
+    border-radius: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.inputTarea {
+    width: 50%;
+    height: 20px;
+    border: none;
+    background-color: #FEEBB8;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.inputTarea:focus {
+    outline: none;
+}
+
+.btnAgregar {
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: var(--color-boton);
+    background: var(--color-boton-gradiente);
+}
+
+.btnAgregar:hover {
+    background: rgb(9, 223, 184);
+    background: linear-gradient(90deg, rgba(9, 223, 184, 1) 6%, rgba(18, 224, 207, 1) 93%);
+    transition: .5s;
+}
+
+.listaTareas {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 20px 50px;
+    margin: 20px;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarea {
+    width: 100%;
+    max-width: 100%;
+    background: #FEF1CC;
+    color: rgb(112, 112, 112);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+.btnBorrar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #EB5E81;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btnBorrar:hover {
+    background-color: #e44c72;
+}
